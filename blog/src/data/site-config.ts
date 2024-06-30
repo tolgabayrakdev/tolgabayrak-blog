@@ -42,8 +42,8 @@ const siteConfig: SiteConfig = {
     subtitle: 'Kişisel blog sayfası',
     description: 'Tolga BAYRAK tarafından yazılan kişisel bir blog sayfasıdır.',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/site-image.jpg',
+        alt: 'Tolga Bayrak Blog Sayfası'
     },
     headerNavLinks: [
         {
@@ -83,21 +83,13 @@ const siteConfig: SiteConfig = {
     hero: {
         title: 'Selam, hoşgeldin 👋🏻',
         text: "Tekrardan selam, burada ilgimi çektiği ve merak ettiğim konulara azıcık da olsa değinmek istedim. Umarım keyif alırsın. İyi okumalar. <a href='https://github.com/tolgabayrakdev'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+       
         actions: [
             {
                 text: 'Benimle iletişime geç',
                 href: '/contact'
             }
         ]
-    },
-    subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
-        formUrl: '#'
     },
     postsPerPage: 8,
     projectsPerPage: 8
