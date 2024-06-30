@@ -11,4 +11,4 @@ _Email:_
 Mail adresimden ulaşabilirsin [bayraktolga28@gmail.com](mailto:bayraktolga28@gmail.com)
 
 _Social Media:_
-Sosyal medya hesaplarımıda takip etmek istersen. [Instagram](https://instagram.com) ve [LinkedIn](https://www.linkedin.com/).
+Sosyal medya hesaplarımıda takip etmek istersen. [Instagram](https://instagram.com/tolgabayrakv) ve [LinkedIn](https://www.linkedin.com/in/tolgabayrak0/).

@@ -73,7 +73,7 @@ const siteConfig: SiteConfig = {
     socialLinks: [
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://instagram.com/tolgabayrakv'
         },
         {
             text: 'Linkedln',
@@ -82,7 +82,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Selam, hoşgeldin 👋🏻',
-        text: "Tekrardan selam, burada ilgimi çektiği ve merak ettiğim konulara azıcık da olsa değinmek istedim. Umarım keyif alırsın. İyi okumalar. <a href='https://github.com/tolgabayrakdev'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        text: "Tekrardan selam, burada ilgimi çektiği ve merak ettiğim konulara azıcık da olsa değinmek istedim. Umarım keyif alırsın. İyi okumalar. <a href='https://github.com/tolgabayrakdev'>GitHub</a> ve <a href='https://instagram.com/tolgabayrakv'>Instagram</a>.",
        
         actions: [
             {
