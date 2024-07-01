@@ -2,6 +2,7 @@
 title: Veritabanı Yönetimi İçin Temel SQL Komutları
 excerpt: SQL (Structured Query Language), veritabanlarıyla etkileşim kurmak için kullanılan bir dildir. Veritabanı yönetimi ve veri manipülasyonu için standart bir dil olarak kabul edilir. SQL, veri sorgulama, veri ekleme, güncelleme ve silme gibi çeşitli işlemleri gerçekleştirmek için kullanılır.
 publishDate: 'July 1 2024'
+isFeatured: true
 tags:
   - SQL
   - Technology
