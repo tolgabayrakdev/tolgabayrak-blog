@@ -1,70 +1,107 @@
 ---
-title: Building an Impressive Front-End Developer Portfolio
-excerpt: In the competitive world of front-end development, a strong portfolio is your ticket to showcasing your skills, making a lasting impression on potential employers or clients, and advancing your career.
-publishDate: 'October 5 2023'
+title: Veritabanı Yönetimi İçin Temel SQL Komutları
+excerpt: SQL (Structured Query Language), veritabanlarıyla etkileşim kurmak için kullanılan bir dildir. Veritabanı yönetimi ve veri manipülasyonu için standart bir dil olarak kabul edilir. SQL, veri sorgulama, veri ekleme, güncelleme ve silme gibi çeşitli işlemleri gerçekleştirmek için kullanılır.
+publishDate: 'July 1 2024'
 tags:
-  - Web
-  - Web development
+  - SQL
+  - Technology
 seo:
   image:
     src: '/post-2.jpg'
-    alt: Half open laptop on a desk
 ---
 
-![Half open laptop on a desk](/post-2.jpg)
+![SQL blog resmi](/post-2.jpg)
 
-**Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
 
-In the competitive world of front-end development, a strong portfolio is your ticket to showcasing your skills, making a lasting impression on potential employers or clients, and advancing your career. Your portfolio is your digital business card, and it should be a reflection of your talent, creativity, and expertise. In this post, we'll walk you through the steps to create an impressive front-end developer portfolio that will help you stand out in the crowd.
+Veritabanı yönetimi, günümüzün veri odaklı dünyasında kritik bir beceri haline gelmiştir. SQL nedir? SQL (Structured Query Language), veritabanlarıyla etkileşim kurmak için kullanılan standart bir dildir. Bu blog yazısında, en yaygın SQL komutlarını ve nasıl kullanıldıklarını keşfedeceğiz.
 
-## 1. Showcase a Diverse Range of Projects
+## SQL Nedir ?
 
-Your portfolio should be a testament to your versatility. Include a variety of projects that demonstrate your skills in different areas of front-end development. Consider including projects like:
+SQL kullanımı, veritabanlarını yönetmek ve manipüle etmek için önemli bir dildir. SQL, veritabanı oluşturma, veri ekleme, güncelleme ve silme gibi çeşitli işlemleri gerçekleştirmek için kullanılır.
 
-- **Responsive Websites:** Showcase your ability to create websites that adapt seamlessly to various screen sizes and devices.
+## Temel SQL Komutları
 
-- **Interactive Web Applications:** Feature web applications that engage users with dynamic features and functionalities.
+1. **SELECT:** SELECT komutu, veritabanından veri sorgulamak için kullanılır. SQL SELECT komutu, belirli sütunları veya tüm satırları seçmek için kullanılır.
 
-- **E-commerce Websites:** If you've worked on e-commerce sites, include them to demonstrate your expertise in handling complex web development tasks.
+```sql
+SELECT column1, column2 FROM table_name;
 
-- **Open Source Contributions:** Highlight your involvement in open-source projects or contributions to online coding communities.
+```
 
-## 2. Highlight Your Coding Skills
+2. **INSERT:** INSERT komutu, bir tabloya yeni kayıtlar eklemek için kullanılır. SQL INSERT komutu, veritabanına yeni veri eklemek için kullanılır.
 
-Your portfolio should provide a clear view of your coding proficiency. Consider the following:
+```sql
+INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);
+INSERT INTO customers (name, address) VALUES ('Ahmet', 'İstanbul');
 
-- **Clean and Organized Code:** Present your code in a clean and well-organized manner. Use proper indentation, comments, and coding standards.
 
-- **Use of Version Control:** Showcase your use of version control systems like Git and GitHub to demonstrate your collaboration and code management skills.
+```
 
-- **Code Samples:** Include snippets of code from your projects to give visitors an insight into your coding style and problem-solving abilities.
+3. **UPDATE:** UPDATE komutu, mevcut kayıtları güncellemek için kullanılır. SQL UPDATE komutu, veritabanındaki verileri güncellemek için kullanılır.
 
-## 3. Emphasize Responsive Design
+```sql
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+UPDATE customers SET address = 'Ankara' WHERE customer_id = 1;
 
-As a front-end developer, responsive design is paramount. Ensure that your portfolio itself is a shining example of responsive design. It should look and function flawlessly on a variety of devices, including desktops, tablets, and smartphones.
+```
 
-## 4. User Experience (UX) Matters
+4. **DELETE:** DELETE komutu, bir tablodan mevcut kayıtları silmek için kullanılır. SQL DELETE komutu, veritabanından veri silme işlemini gerçekleştirir.
 
-Front-end development is not just about writing code; it's about creating a great user experience. Explain your thought process behind the user interface (UI) and UX decisions you made in your projects. Discuss how you optimized performance and accessibility.
+```sql
+DELETE FROM table_name WHERE condition;
+DELETE FROM table_name WHERE username = "Joe";
 
-## 5. Document Your Projects
+```
 
-Accompany each project with a detailed description. Explain the project's goals, your role in it, the technologies and tools you used, and any challenges you overcame. This documentation provides context and depth to your work.
+5. **CREATE TABLE:** CREATE TABLE komutu, yeni bir tablo oluşturmak için kullanılır. SQL CREATE TABLE komutu, veritabanında yeni bir tablo oluşturmak için kullanılır.
 
-## 6. Regularly Update Your Portfolio
+```sql
+CREATE TABLE customers (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    address VARCHAR(100)
+);
 
-A stagnant portfolio can give the impression of inactivity or lack of progress. Regularly update your portfolio with your latest work and projects. Remove outdated or less impressive work to keep your portfolio relevant and impactful.
+```
+Tabloyu silmek içinde ''DROP TABLE'' komutu kullanılır
 
-## 7. Test and Optimize Load Times
+```sql
+DROP TABLE cutomers;
 
-Slow-loading websites can turn visitors away. Ensure your portfolio loads quickly by optimizing images and using proper techniques to minimize load times.
+```
 
-## 8. Seek Feedback
+6. **ORDER BY:** ORDER BY ifadesi, SQL'de sorgu sonuçlarını belirli bir düzene göre sıralamak için kullanılır. Sonuçları artan (ASC) veya azalan (DESC) sıraya göre sıralayabilirsiniz.
 
-Before finalizing your portfolio, seek feedback from peers, mentors, or online communities. Constructive criticism can help you refine your portfolio and make it even more impressive.
+Artan Sıralama:
+```sql
+SELECT * FROM customers ORDER BY name ASC;
 
-## 9. Personalize Your Portfolio
+```
+Azalan Sıralama:
+```sql
+SELECT * FROM orders ORDER BY order_date DESC;
 
-Your portfolio is not just about your work; it's also about you. Add a personal touch by including an **"About Me"** section that tells your story, your passions, and what makes you unique as a front-end developer.
+```
 
-Remember, your front-end developer portfolio is an ongoing project. Keep refining it, stay up-to-date with the latest trends, and let it evolve as your skills and experience grow. An impressive portfolio not only serves as a testament to your abilities but also opens doors to exciting opportunities in the world of front-end development.
+
+7. **GROUP BY:** GROUP BY ifadesi, SQL'de satırları belirli bir sütuna göre gruplamak için kullanılır. Genellikle grup içindeki her bir kategori için toplama (SUM), ortalama (AVG), sayı (COUNT) gibi toplama fonksiyonları ile birlikte kullanılır.
+
+- Şehirlere Göre Müşteri Sayısını Gruplamak:
+
+```sql
+SELECT city, COUNT(*) FROM customers GROUP BY city;
+
+```
+- Müşterilere Göre Toplam Sipariş Tutarını Gruplamak:
+
+```sql
+SELECT customer_id, SUM(order_amount) FROM orders GROUP BY customer_id;
+```
+
+
+
+
+### Sonuç
+
+SQL komutları, veritabanı yönetimi ve manipülasyonu için temel araçlardır. Bu temel komutları öğrenmek, veritabanları ile etkili bir şekilde çalışmanıza yardımcı olacaktır. Daha ileri düzey SQL komutları ve uygulamaları hakkında daha fazla bilgi edinmek için blogumuzu takip etmeye devam edin.
+
