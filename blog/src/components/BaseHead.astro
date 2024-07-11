@@ -9,7 +9,7 @@ export type Props = {
     pageType?: 'website' | 'article';
 };
 
-const { description = '', image = siteConfig.image, pageType = 'website' } = Astro.props;
+const { description = 'Tolga BAYRAK blog sayfasıdır.', image = siteConfig.image, pageType = 'website' } = Astro.props;
 const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' | ');
 const resolvedImage = image?.src
     ? {
