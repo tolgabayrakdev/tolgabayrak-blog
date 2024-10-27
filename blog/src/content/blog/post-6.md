@@ -2,6 +2,7 @@
 title: NodeJS Nedir ?
 excerpt: Bu yazıda, Node.js'in ne olduğunu, neden popüler olduğunu ve hangi alanlarda kullanıldığını inceleyeceğiz. Özellikle performans ve esneklik açısından Node.js'in sunduğu avantajlara değineceğiz.
 publishDate: 'Oct 27 2024'
+isFeatured: true
 tags:
   - NodeJS
   - JavaScript
