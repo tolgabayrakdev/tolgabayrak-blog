@@ -22,7 +22,7 @@ Node.js, 2009 yılında Ryan Dahl tarafından geliştirilen ve JavaScript’i su
 
 Node.js, genellikle "non-blocking" yani eşzamansız yapısıyla bilinir. Bu, sunucunun, bir işlem tamamlanana kadar beklemek zorunda kalmadan diğer işlemleri yerine getirebilmesi anlamına gelir. Bu özellik, özellikle yüksek trafikli web uygulamaları ve gerçek zamanlı uygulamalar için büyük bir avantaj sağlar.
 
-## Python Nerelerde Kullanılır?
+## NodeJS Nerelerde Kullanılır?
 
 Node.js’in popülaritesi her geçen gün artıyor çünkü sunduğu avantajlar pek çok farklı alanda uygulama geliştirilmesini mümkün kılıyor:
 
