@@ -1,33 +1,59 @@
 ---
-import ArrowLeft from '../icons/ArrowLeft.astro';
-import ArrowRight from '../icons/ArrowRight.astro';
-import IconButton from './IconButton.astro';
+import type { Page } from "astro";
+import LinkButton from "./LinkButton.astro";
+import type { CollectionEntry } from "astro:content";
 
-const { page, class: className } = Astro.props;
+export interface Props {
+  page: Page<CollectionEntry<"blog">>;
+}
+
+const { page } = Astro.props;
 ---
 
-<nav aria-label="Pagination" class:list={['px-12 py-2 relative text-center', className]}>
-    {
-        page.url.prev && (
-            <IconButton
-                class="absolute left-0 top-1/2 -translate-y-1/2"
-                href={page.url.prev}
-                aria-label={`Go to page ${page.currentPage - 1} of ${page.lastPage}`}
-            >
-                <ArrowLeft class="w-5 h-5 fill-current" />
-            </IconButton>
-        )
-    }
-    <span class="text-sm" aria-current="page">Sayfa {page.currentPage} - {page.lastPage}</span>
-    {
-        page.url.next && (
-            <IconButton
-                class="absolute right-0 top-1/2 -translate-y-1/2"
-                href={page.url.next}
-                aria-label={`Go to page ${page.currentPage + 1} of ${page.lastPage}`}
-            >
-                <ArrowRight class="w-5 h-5 fill-current" />
-            </IconButton>
-        )
-    }
-</nav>
+{
+  page.lastPage > 1 && (
+    <nav class="pagination-wrapper" aria-label="Pagination">
+      <LinkButton
+        disabled={!page.url.prev}
+        href={page.url.prev as string}
+        className={`mr-4 select-none ${page.url.prev ? "" : "disabled"}`}
+        ariaLabel="Previous"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class:list={[{ "disabled-svg": !page.url.prev }]}
+        >
+          <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" />
+        </svg>
+        Önceki
+      </LinkButton>
+      {page.currentPage} / {page.lastPage}
+      <LinkButton
+        disabled={!page.url.next}
+        href={page.url.next as string}
+        className={`mx-4 select-none ${page.url.next ? "" : "disabled"}`}
+        ariaLabel="Next"
+      >
+        Sonraki
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class:list={[{ "disabled-svg": !page.url.next }]}
+        >
+          <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+        </svg>
+      </LinkButton>
+    </nav>
+  )
+}
+
+<style>
+  .pagination-wrapper {
+    @apply mb-8 mt-auto flex justify-center;
+  }
+  .disabled {
+    @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
+  }
+  .disabled-svg {
+    @apply group-hover:!fill-skin-base;
+  }
+</style>
