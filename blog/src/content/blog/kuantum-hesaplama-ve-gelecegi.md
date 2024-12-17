@@ -1,6 +1,6 @@
 ---
 author: Tolga BAYRAK
-pubDatetime: 2024-12-17T20:00:00Z
+pubDatetime: 2024-12-12T20:00:00Z
 title: Kuantum Hesaplama ve Geleceği
 slug: kuantum-hesaplama-ve-gelecegi
 ogImage: ""
