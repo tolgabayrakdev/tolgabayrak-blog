@@ -1,7 +1,7 @@
 ---
 author: Tolga BAYRAK
 pubDatetime: 2024-12-12T10:00:00Z
-title: Zaman Yönetimi: Verimliliğin Anahtarı
+title: Zaman Yönetimi, Verimliliğin Anahtarı
 slug: zaman-yonetimi-verimlilik
 ogImage: ""
 featured: true
