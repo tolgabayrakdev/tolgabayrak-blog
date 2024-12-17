@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://tolgabayrak.com/",
   desc: "Tolga Bayrak'ın kişisel blogu. Yazılım geliştirme, teknoloji ve kişisel gelişim üzerine içerikler.",
   title: "Tolga BAYRAK",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
