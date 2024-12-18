@@ -1,7 +1,7 @@
 ---
 author: Tolga BAYRAK
 pubDatetime: 2024-12-18T12:00:00Z
-title: Kendi Potansiyelini Keşfet: Hayatını Dönüştürmenin İlk Adımı
+title: Kendi Potansiyelini Keşfet, Hayatını Dönüştürmenin İlk Adımı
 slug: kendi-potansiyelini-kesfet
 ogImage: ""
 featured: true
