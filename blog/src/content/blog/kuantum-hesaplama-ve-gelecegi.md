@@ -4,7 +4,7 @@ pubDatetime: 2024-12-12T12:00:00Z
 title: Kuantum Hesaplama ve Geleceği
 slug: kuantum-hesaplama-ve-gelecegi
 ogImage: ""
-featured: true
+featured: false
 tags:
   - kuantum bilgisayarları
   - bilgisayar bilimi
