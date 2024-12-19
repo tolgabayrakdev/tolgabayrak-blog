@@ -4,7 +4,7 @@ pubDatetime: 2024-12-11T13:00:00Z
 title: REST API ve GraphQL Arasındaki Farklar
 slug: rest-api-vs-graphql
 ogImage: ""
-featured: true
+featured: false
 tags:
   - api
   - graphql
