@@ -1,7 +1,7 @@
 ---
 author: Tolga BAYRAK
 pubDatetime: 2024-12-20T10:00:00Z
-title: Öz Disiplin: Başarının ve Özgürlüğün Temel Taşı
+title: Öz Disiplin Başarının ve Özgürlüğün Temel Taşı
 slug: oz-disiplin-basari-ozgurluk
 ogImage: ""
 featured: false
