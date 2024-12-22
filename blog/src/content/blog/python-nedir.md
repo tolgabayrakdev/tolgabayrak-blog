@@ -4,7 +4,7 @@ pubDatetime: 2024-12-09T10:30:00Z
 title: Python Nedir? Ne İçin Kullanılır?
 slug: python-nedir-ne-icin-kullanilir
 ogImage: ""
-featured: true
+featured: false
 tags:
   - python
   - programming
